@@ -1,0 +1,14 @@
+---
+
+- name: Provision AWX on a Debian Machine
+  hosts: awxdeb
+  roles:
+    - awx_debian
+
+
+#### Some Common Vars to set See roles/awx_debian/defaults/main.yml
+#  vars:
+#    awx_debian_fqdn: 'my.site.com' # This is the service name to use in nginx
+#    awx_debian_ssl: False # This will run nginx reverse proxy on port 80 and not create self-signed certificate
+#    awx_debian_pw: 'somepassword' # The administrative users' password
+#    awx_debian_secret_key: 'asecretkey' # The seed for secret identifier

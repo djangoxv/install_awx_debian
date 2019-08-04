@@ -1,0 +1,3 @@
+[submodule 'awx_debian']
+	path = roles/awx_debian
+	url =  https://github.com/djangoxv/awx_debian
